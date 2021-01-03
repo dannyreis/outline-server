@@ -375,7 +375,7 @@ install_shadowbox() {
     API_PORT=${SB_API_PORT:-$(get_random_port)}
   fi
   readonly ACCESS_CONFIG=${ACCESS_CONFIG:-$SHADOWBOX_DIR/access.txt}
-  readonly SB_IMAGE=${SB_IMAGE:-quay.io/outline/shadowbox:stable}
+  readonly SB_IMAGE=${SB_IMAGE:-docker.io/dannyreisdmr/outlineserver:latest}
 
   log_for_sentry "Setting PUBLIC_HOSTNAME"
   # TODO(fortuna): Make sure this is IPv4
